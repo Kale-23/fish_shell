@@ -1,6 +1,10 @@
 if status is-interactive
-	set PATH "/opt/homebrew/bin:$PATH"	
 end
+
+function fish_greeting
+    echo time: (date +%T)\n host: (hostname) | cowsay -f small | lolcat
+end
+set PATH "/opt/homebrew/bin:$PATH"	
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
