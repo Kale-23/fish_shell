@@ -1,26 +1,29 @@
 if status is-interactive
 end
 
-set -g PATH "/opt/homebrew/bin:$PATH"	
-
 #fish login message
 function fish_greeting
     echo time: (date +%T)\n host: (hostname) | cowsay -f small | lolcat
 end
 
-#aliases
-alias ron="ssh kcd1021@ron.sr.unh.edu"
-alias ftpron="sftp kcd1021@ron.sr.unh.edu"
-alias premise="ssh kcd1021@premise.sr.unh.edu"
-alias ftppremise="sftp kcd1021@premise.sr.unh.edu"
+#vi mode
+function fish_user_key_bindings
+    # Execute this once per mode that emacs bindings should be used in
+    fish_default_key_bindings -M insert
 
-alias ls="eza --icons=always"
+    # Then execute the vi-bindings so they take precedence when there's a conflict.
+    # Without --no-erase fish_vi_key_bindings will default to
+    # resetting all bindings.
+    # The argument specifies the initial mode (insert, "default" or visual).
+    fish_vi_key_bindings --no-erase insert
+end
 
 #other configs
 source "$HOME"/.config/fish/theme.fish
 
+# path setups
+set -g PATH "/opt/homebrew/bin:$PATH"	
 # >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
 if test -f /opt/homebrew/anaconda3/bin/conda
     eval /opt/homebrew/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 else

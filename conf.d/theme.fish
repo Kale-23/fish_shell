@@ -33,14 +33,6 @@ set -l overlay_light    949cbb
 set -l text             4c4f69 
 set -l text_light       c6d0f5 
 
-# theme autosuggestion
-set -g fish_pager_color_prefix $pink
-set -g fish_pager_color_completion $text_light
-set -g fish_pager_color_description $peach_light
-#set -g
-#set -g
-#set -g
-
 #theme tide
 #set -g 
 #set -g 
@@ -51,29 +43,43 @@ set -g fish_pager_color_description $peach_light
 #set -g
 
 # theme general
-set -g fish_color_normal $rosewater
-set -g fish_color_command $green
-#set -g fish_color_param eebebe
-set -g fish_color_keyword e78284
-set -g fish_color_quote $green_light
-set -g fish_color_redirection $pink_light
-set -g fish_color_end $pink_light
-set -g fish_color_comment $text_light
-#set -g fish_color_error e78284
-#set -g fish_color_gray 737994
+set -g fish_color_normal            $rosewater
+set -g fish_color_command           $green
+set -g fish_color_keyword           $green
+set -g fish_color_quote             $green_light
+set -g fish_color_redirection       $pink_light
+set -g fish_color_end               $pink_light
+set -g fish_color_error             $red
+set -g fish_color_param             $green_light
+set -g fish_color_valid_path        $peach_light
+set -g fish_color_option            $green_light 
+set -g fish_color_comment           $text_light
 #set -g fish_color_selection --background=414559
-#set -g fish_color_search_match --background=414559
-#set -g fish_color_option a6d189
-#set -g fish_color_operator f4b8e4
-#set -g fish_color_escape ea999c
-#set -g fish_color_autosuggestion 737994
-#set -g fish_color_cancel e78284
+set -g fish_color_operator          $mauve_light
+set -g fish_color_escape            $mauve_light
+set -g fish_color_autosuggestion    $red_light #????
+#not needed due to tide
 #set -g fish_color_cwd e5c890
+#set -g fish_color_cwd_root e5c890
 #set -g fish_color_user 81c8be
 #set -g fish_color_host 8caaee
 #set -g fish_color_host_remote a6d189
 #set -g fish_color_status e78284
-#set -g fish_pager_color_progress 737994
-#set -g fish_pager_color_prefix f4b8e4
-#set -g fish_pager_color_completion c6d0f5
-#set -g fish_pager_color_description 737994
+#set -g fish_color_cancel e78284
+#set -g fish_color_search_match --background=414559
+#set -g fish_color_history_current --background=414559
+
+# theme pager
+#set -g fish_pager_color_progress
+#set -g fish_pager_color_background
+set -g fish_pager_color_prefix $pink_light
+set -g fish_pager_color_completion $text_light
+set -g fish_pager_color_description $peach_light
+#set -g fish_pager_color_selected_background
+#set -g fish_pager_color_selected_prefix
+#set -g fish_pager_color_selected_completion
+#set -g fish_pager_color_selected_description
+#set -g fish_pager_color_secondary_background
+#set -g fish_pager_color_secondary_prefix¶
+#set -g fish_pager_color_secondary_completion
+#set -g fish_pager_color_secondary_description
