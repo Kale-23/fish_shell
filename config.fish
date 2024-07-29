@@ -1,10 +1,23 @@
 if status is-interactive
 end
 
+set -g PATH "/opt/homebrew/bin:$PATH"	
+
+#fish login message
 function fish_greeting
     echo time: (date +%T)\n host: (hostname) | cowsay -f small | lolcat
 end
-set PATH "/opt/homebrew/bin:$PATH"	
+
+#aliases
+alias ron="ssh kcd1021@ron.sr.unh.edu"
+alias ftpron="sftp kcd1021@ron.sr.unh.edu"
+alias premise="ssh kcd1021@premise.sr.unh.edu"
+alias ftppremise="sftp kcd1021@premise.sr.unh.edu"
+
+alias ls="eza --icons=always"
+
+#other configs
+source "$HOME"/.config/fish/theme.fish
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
