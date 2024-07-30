@@ -20,6 +20,7 @@ end
 
 #other configs
 source "$HOME"/.config/fish/theme.fish
+source "$HOME"/.config/fish/alias.fish
 
 # path setups
 set -g PATH "/opt/homebrew/bin:$PATH"	
