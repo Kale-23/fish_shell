@@ -75,7 +75,32 @@ set -g fish_pager_color_description $peach
 #set -g fish_pager_color_secondary_description
 
 #theme tide
-#set -g  
+#left prompt
+set -g tide_left_prompt_items os pwd git character 
+
+set -g tide_os_color $peach_lt
+
+set -g tide_pwd_color_anchors $yellow_lt
+set -g tide_pwd_color_dirs $yellow
+set -g tide_pwd_color_truncated_dirs $yellow_lt
+
+set -g tide_git_color_branch $green
+set -g tide_git_color_conflicted $maroon
+set -g tide_git_color_dirty $maroon
+#set -g tide_git_color_operation $green
+set -g tide_git_color_staged $blue
+set -g tide_git_color_stashed $mauve
+set -g tide_git_color_untracked $red
+
+set -g tide_character_icon ""
+set -g tide_character_color $green
+set -g tide_character_color_failure $red
+
+#right prompt
+set -g tide_right_prompt_items shlvl $tide_right_prompt_items
+set -g tide_shlvl_color $blue
+
+
 #set -g  
 #set -g 
 #set -g 
