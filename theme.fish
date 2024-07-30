@@ -34,23 +34,21 @@ set -l overlay      737994
 set -l overlay_lt   B9BCCA
 
 # theme general 
-set -g fish_color_autosuggestion 8839ef
-set -g fish_color_normal
-#set -g fish_color_normal
-#set -g fish_color_command
-#set -g fish_color_keyword
-#set -g fish_color_quote
-#set -g fish_color_redirection
-#set -g fish_color_end
-#set -g fish_color_error
-#set -g fish_color_param
-#set -g fish_color_valid_path
-#set -g fish_color_option
-#set -g fish_color_comment
-#set -g fish_color_selection
-#set -g fish_color_operator
-#set -g fish_color_escape
-#set -g fish_color_autosuggestion
+set -g fish_color_normal $rosewater
+set -g fish_color_command $green
+set -g fish_color_keyword $green
+set -g fish_color_quote $mauve
+set -g fish_color_redirection $pink
+set -g fish_color_end $pink
+set -g fish_color_error $red
+set -g fish_color_param $yellow
+set -g fish_color_valid_path $yellow
+set -g fish_color_option $green_lt
+set -g fish_color_comment $text
+set -g fish_color_selection $text
+set -g fish_color_operator $lavender
+set -g fish_color_escape $lavender
+set -g fish_color_autosuggestion $text_lt
 #set -g fish_color_cwd
 #set -g fish_color_cwd_root
 #set -g fish_color_user
@@ -60,6 +58,21 @@ set -g fish_color_normal
 #set -g fish_color_cancel
 #set -g fish_color_search_match
 #set -g fish_color_history_current
+
+# theme pager
+#set -g fish_pager_color_progress
+#set -g fish_pager_color_background
+set -g fish_pager_color_prefix $pink
+set -g fish_pager_color_completion $text_lt
+set -g fish_pager_color_description $peach
+#set -g fish_pager_color_selected_background 
+#set -g fish_pager_color_selected_prefix
+#set -g fish_pager_color_selected_completion
+#set -g fish_pager_color_selected_description
+#set -g fish_pager_color_secondary_background
+#set -g fish_pager_color_secondary_prefix
+#set -g fish_pager_color_secondary_completion
+#set -g fish_pager_color_secondary_description
 
 #theme tide
 #set -g  
