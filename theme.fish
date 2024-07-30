@@ -87,7 +87,7 @@ set -g tide_pwd_color_truncated_dirs $yellow_lt
 set -g tide_git_color_branch $green
 set -g tide_git_color_conflicted $maroon
 set -g tide_git_color_dirty $maroon
-#set -g tide_git_color_operation $green
+set -g tide_git_color_operation $green
 set -g tide_git_color_staged $blue
 set -g tide_git_color_stashed $mauve
 set -g tide_git_color_untracked $red
@@ -99,21 +99,3 @@ set -g tide_character_color_failure $red
 #right prompt
 set -g tide_right_prompt_items shlvl $tide_right_prompt_items
 set -g tide_shlvl_color $blue
-
-
-#set -g  
-#set -g 
-#set -g 
-#set -g 
-#set -g 
-#set -g 
-
-# theme general
-#set -g  
-#set -g  
-#set -g 
-#set -g 
-#set -g 
-#set -g 
-#set -g 
-
