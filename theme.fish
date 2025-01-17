@@ -17,7 +17,7 @@ set -l yellow       e5c890
 set -l yellow_lt    F2E4C8
 set -l green        a6d189
 set -l green_lt     D3E8C4
-set -l teal         81c8be
+set -g teal         81c8be
 set -l teal_lt      C0E4DF
 set -l sky          99d1db
 set -l sky_lt       CCE8ED

@@ -1,4 +1,5 @@
 if status is-interactive
+    cd $HOME
 end
 
 #fish login message
@@ -26,7 +27,7 @@ source "$HOME"/.config/fish/alias.fish
 set -g PATH "/opt/homebrew/bin:$PATH"	
 # >>> conda initialize >>>
 if test -f /opt/homebrew/anaconda3/bin/conda
-    eval /opt/homebrew/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+    status is-interactive && eval /opt/homebrew/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 else
     if test -f "/opt/homebrew/anaconda3/etc/fish/conf.d/conda.fish"
         . "/opt/homebrew/anaconda3/etc/fish/conf.d/conda.fish"
